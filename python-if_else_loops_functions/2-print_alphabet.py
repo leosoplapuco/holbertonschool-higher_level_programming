@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-
-letters = ['a', 'b', 'c', 'd', 'e']
-for letter in letters:
-    print(letter)
+for i in range(ord('a'), ord('z') + 1):
+    print("{:s}".format(chr(i)), end="")
