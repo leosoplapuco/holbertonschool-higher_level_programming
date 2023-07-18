@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-my_dict = {'a': 'A', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e'}
-print_sorted_dictionary(my_dict)
+#!/usr/bin/python3
+def update_dictionary(my_dict, key, value):
+    my_dict[key] = value
+    return (my_dict)
