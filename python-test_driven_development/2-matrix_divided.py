@@ -5,6 +5,7 @@ module matrix_divided
 
 
 def matrix_divided(matrix, div):
+    """matrix_divided"""
     if not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
