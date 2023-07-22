@@ -1,18 +1,12 @@
 #!/usr/bin/python3
 """
-This is the "2-matrix_divided" module.
-The 2-matrix_divided module functions: matrix_divided(a, b).
+module 2-matrix_divided.
 """
 
 
 def matrix_divided(matrix, div):
     """
-    matrix_divided: divides all elements of a matrix
-    Args:
-        matrix (int, float):  list of lists of integers or floats
-        div (int): divident
-    Returns:
-        int
+    2-matrix_divided
     """
     size = None
     if type(matrix) is not list:
