@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ module test_indentation """
 
+
 def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
