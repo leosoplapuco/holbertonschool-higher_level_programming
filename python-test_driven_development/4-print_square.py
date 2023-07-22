@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module print_square"""
+"""moduel print_square"""
 
 
 def print_square(size):
@@ -8,6 +8,7 @@ def print_square(size):
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-
-    for _ in range(size):
-        print("#" * size)
+    for i in range(size):
+        for j in range(size):
+            print("#", end="")
+        print()
