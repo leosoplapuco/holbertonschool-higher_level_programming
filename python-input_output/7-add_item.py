@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module load_from_json_file"""
+"""function safe_to_json_file"""
 
 
 import json
