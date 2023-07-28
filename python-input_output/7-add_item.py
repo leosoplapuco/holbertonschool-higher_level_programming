@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module load, add and save"""
+"""module load_from_json_file"""
 
 
 import json
