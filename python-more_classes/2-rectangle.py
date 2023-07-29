@@ -5,16 +5,13 @@
 class Rectangle:
     """class Rectangle"""
     def __init__(self, width=0, height=0):
-        '''method: __init__
-        initialize instance of Rectangle
-        '''
+        """method init"""
         self.__width = width
         self.__height = height
 
     @property
     def width(self):
-        '''method: set_width getter
-        '''
+        """method set_width getter"""
         if (not isinstance(self.__width, int)) or isinstance(self.__width,
                                                              bool):
             raise TypeError("width must be an integer")
