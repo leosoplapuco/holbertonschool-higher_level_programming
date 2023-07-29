@@ -10,7 +10,6 @@ class Student:
         self.age = age
 
     def to_json(self):
-        # Crear un diccionario con los atributos de la instancia
         json_dict = {
             "first_name": self.first_name,
             "last_name": self.last_name,
