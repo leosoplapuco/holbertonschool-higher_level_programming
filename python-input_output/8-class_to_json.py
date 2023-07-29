@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""module Person"""
+
+
 class Person:
     """class Person"""
     def __init__(self, name, age, is_student):
