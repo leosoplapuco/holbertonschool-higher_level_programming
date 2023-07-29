@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""function add_item"""
+"""script that adds all arguments to a Python list, and then save them to a file"""
 
 
 import json
