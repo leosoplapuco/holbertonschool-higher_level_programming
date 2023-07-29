@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-"""module """
-
-
+"""module 9-add_item"""
+import json
 import sys
-from 5-save_to_json_file import save_to_json_file
-from 6-load_from_json_file import load_from_json_file
 
+save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+
+filename = "add_item.json"
 try:
-    # Try to load existing data from the file
-    data = load_from_json_file("add_item.json")
+    py_list = load_from_json_file(filename)
 except FileNotFoundError:
-    # If the file doesn't exist, initialize an empty list
-    data = []
-
-# Add the command line arguments to the list
-data.extend(sys.argv[1:])
-
-# Save the updated list to the file
-save_to_json_file(data, "add_item.json")
+    py_list = []
+finally:
+    for el in sys.argv[1:]:
+        py_list.append(str(el))
+    save_to_json_file(py_list, filename)
